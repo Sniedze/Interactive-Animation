@@ -1,0 +1,223 @@
+body{
+    background-image: url(images/backgr1.png);
+    background-size: 90vw;
+}
+.mom{
+    background-image: url(images/sprite4.png);
+    width: 250px;
+    height: 415px;
+    animation:walk 2.5s 0.5s steps(8);
+}
+.mom2{
+    background-image: url(images/mother_back.png);
+    width: 215px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+
+
+}
+@keyframes walk{
+    to{
+        background-position: -2000px;
+        }
+}
+
+.dad{
+    width: 215px;
+    height: 385px;
+    margin-top: 315px;
+
+}
+
+.creatures{
+    display: flex;
+
+
+
+}
+.move{
+    display: inline-block;
+    animation: movement 2.2s 0.8s forwards;
+    margin-top: 315px;
+}
+
+@keyframes movement{
+    to{
+        transform: translateX(200px);
+    }
+}
+.baloon1{
+    position: relative;
+        width: 210px;
+        z-index: 5;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 230px;
+}
+.baloon2{
+    position: relative;
+       width: 100px;
+        z-index: 5;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+.baloon3{
+    position: relative;
+        width: 100px;
+        z-index: 5;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    padding-right: 50px;
+}
+.label1, .label2, .label3{
+    position: absolute;
+        left: 0em;
+        width: 100%;
+        z-index: 10;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 4em;
+        display:none;
+}
+h1{
+    font-family: Chiller;
+    font-size: 3em;
+    text-align: center;
+}
+.label4{
+    position: absolute;
+        left: 0em;
+        width: 100%;
+        z-index: 10;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 5em;
+
+}
+.clicked{
+    animation: fly infinite 1.2s forwards;
+    }
+
+
+
+    @keyframes fly {
+        to {
+            transform: translateY(-150vh);
+            transition-timing-function: ease-in;
+        }
+    }
+.cake{
+    width: 80px;
+    height: 80px;
+
+
+
+}
+.cake2{
+    animation: cakesEnter 2s forwards;
+
+
+}
+@keyframes cakesEnter {
+
+
+100% {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
+            opacity: 1;
+            transition: all 4s ease-out 0s;
+        }
+    }
+
+
+#c2{
+    margin-top: 580px;
+
+    }
+#c3{
+    margin-top: 100px;
+
+    }
+#c1{
+    margin-top: 100px;
+    margin-left: 50px;
+
+    }
+.shake {
+        animation: shakeIt 1s infinite;
+        }
+
+    @keyframes shakeIt {
+        50% {
+            -webkit-opacity: 0.01;
+            -moz-opacity: 0.01;
+            opacity: 0.01;
+            color: #000;
+        }
+        100% {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
+            opacity: 1;
+            transition: all 4s ease-out 0s;
+        }
+    }
+.picked{
+    animation: scal 1s forwards;
+}
+@keyframes scal{
+    100%{
+        transform: scale(3);
+    }
+}
+.explode {
+        animation: explo 1s forwards;
+    }
+
+    @keyframes explo {
+        50% {
+            transform: translateY(-28vh) translateX(-3.5vw);
+            transition-timing-function: ease-in;
+        }
+        65% {
+            opacity: 0.2;
+            transform: scale(3) rotate(-200deg);
+        }
+        100% {
+            transform: translateX(-100vw);
+        }
+    }
+.dadMove {
+        animation: dadMove 2s forwards;
+    }
+
+    @keyframes dadMove {
+        To {
+            transform: translateX(-30vw);
+            transition-timing-function: ease-in-out;
+        }
+    }
+.momMove {
+        animation: momMove 2s forwards;
+    }
+
+    @keyframes momMove {
+        To {
+            transform: translateX(20vw);
+            transition-timing-function: ease-in-out;
+        }
+    }
